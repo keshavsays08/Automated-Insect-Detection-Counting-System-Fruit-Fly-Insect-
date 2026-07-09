@@ -24,7 +24,7 @@ Data Collection → Annotation → Model Training → Pi Deployment → Real-Tim
  1100+ Images  Roboflow       YOLOv8           Optimization    CSV Logging
 ```
 
-**[Add screenshot/diagram of your setup here]**
+**[Initial Project Setup](images/1.jpeg)**
 
 ---
 
@@ -218,9 +218,6 @@ Edit `config/config.yaml` to adjust:
 ```bash
 python scripts/download_dataset.py
 ```
-
-Or manually from [Roboflow Project](https://roboflow.com/workspace/your-workspace/project/fruit-fly-detection-2rfnl)
-
 **[Add screenshot of: Roboflow dataset page, augmentation examples]**
 
 ---
@@ -269,33 +266,6 @@ Automated-Insect-Detection-Counting-System/
 ├── requirements.txt               # Python dependencies
 └── .gitignore                     # Git ignore rules
 ```
-
----
-
-## 🎓 Learning Outcomes
-
-Through this project, I demonstrated proficiency in:
-- **Deep Learning**: YOLOv8 training and optimization
-- **Computer Vision**: Real-time object detection and tracking
-- **Edge AI**: Model deployment on resource-constrained hardware
-- **Software Engineering**: End-to-end ML pipeline development
-- **Hardware Integration**: 3D design and physical prototyping
-- **Data Science**: Annotation, augmentation, and dataset management
-- **DevOps**: Raspberry Pi setup and Python environment management
-
----
-
-## 🚀 Future Enhancements
-
-- **BoT-SORT Tracking**: Individual fly trajectory tracking
-- **Entry/Exit Counting**: Insects passing through defined zones
-- **Real-time Analytics**: Minute-by-minute aggregation and alerts
-- **Multi-species Detection**: Expand to detect multiple insect types
-- **Web Dashboard**: Remote monitoring via web interface
-- **Mobile App**: Real-time notifications and data access
-- **Power Optimization**: Battery operation for field deployment
-
----
 
 ## 📸 Project Gallery
 
