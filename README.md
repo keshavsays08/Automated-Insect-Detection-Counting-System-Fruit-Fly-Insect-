@@ -24,7 +24,7 @@ Data Collection → Annotation → Model Training → Pi Deployment → Real-Tim
  1100+ Images  Roboflow       YOLOv8           Optimization    CSV Logging
 ```
 
-**[Initial Project Setup](images/1.jpeg)**
+![Initial Project Setup](images/1.jpeg)
 
 ---
 
