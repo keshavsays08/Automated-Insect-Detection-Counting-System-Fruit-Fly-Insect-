@@ -27,6 +27,9 @@ Data Collection → Annotation → Model Training → Pi Deployment → Real-Tim
 ![Initial Project Setup](images/1.jpeg)
 
 ---
+![Final Project Setup](images/10.jpeg)
+
+---
 
 ## 🛠️ Technology Stack
 
@@ -61,8 +64,6 @@ Data Collection → Annotation → Model Training → Pi Deployment → Real-Tim
 | **Training Data** | 520 annotated images |
 | **Real-time FPS** | 5-10 FPS on Pi 4 |
 
-**[Add screenshot of training metrics/graphs here]**
-
 ---
 
 ## 🎬 Project Pipeline
@@ -72,7 +73,7 @@ Data Collection → Annotation → Model Training → Pi Deployment → Real-Tim
 - Various scenarios: different lighting, angles, close-ups, far shots
 - Consistent dome setup for standardization
 
-**[Add pictures of: dome setup, camera mounted, sample raw images]**
+![During Data Collection](images/2.jpeg)
 
 ### Phase 2: Data Annotation
 - Annotated **520 images** using Roboflow
@@ -80,7 +81,7 @@ Data Collection → Annotation → Model Training → Pi Deployment → Real-Tim
 - ~2-3 hours of annotation work
 - Single class: "fruit fly"
 
-**[Add screenshots of: Roboflow interface, annotated images with boxes]**
+![During Data Annotation](images/3.png)
 
 ### Phase 3: Model Training
 - **Framework**: YOLOv8 Nano (optimized for Pi)
@@ -88,7 +89,7 @@ Data Collection → Annotation → Model Training → Pi Deployment → Real-Tim
 - **Augmentation**: 3x multiplier for better generalization
 - **Result**: 93% mAP@50 in just 8 epochs (early stop due to excellent performance)
 
-**[Add screenshots of: training progress, loss curves, metrics dashboard]**
+![Training Results](images/8.png)
 
 ### Phase 4: PC Simulation Testing
 - Created Python simulator to test model on PC
@@ -96,22 +97,20 @@ Data Collection → Annotation → Model Training → Pi Deployment → Real-Tim
 - Live detection display with 15-second intervals
 - CSV logging of results
 
-**[Add screenshots of: PC simulator running, detection results, CSV output]**
-
 ### Phase 5: Raspberry Pi Deployment
 - Installed 64-bit Raspberry Pi OS
 - Optimized PyTorch inference (CPU-only)
 - Deployed real-time detection system
 - Automated snapshot capture every 60 seconds
 
-**[Add pictures of: Raspberry Pi setup, camera connection, live detection window]**
+![During Deployment](images/4.jpeg)
 
 ### Phase 6: Hardware Integration
 - **3D Enclosure Design**: Custom-printed trap housing
 - **Components**: Camera mount, Pi housing, pheromone chamber
 - **Purpose**: Integration point for field deployment
 
-**[Add pictures of: 3D model file, printed enclosure, assembly process, final mounted setup]**
+![During 3D Printing](images/5.jpeg)
 
 ---
 
@@ -140,7 +139,7 @@ Data Collection → Annotation → Model Training → Pi Deployment → Real-Tim
 - Pheromone trap integration design
 - Field-deployment ready
 
-**[Add screenshots of: live detection window, CSV output, control interface]**
+![After Data Collection](images/6.jpeg)
 
 ---
 
@@ -162,7 +161,7 @@ Data Collection → Annotation → Model Training → Pi Deployment → Real-Tim
 - **Snapshot Interval**: Every 60 seconds (configurable)
 - **Session Tracking**: Duration, total frames, total detections
 
-**[Add screenshots of: CSV logs in Excel, session statistics, performance charts]**
+![After Data Collection](images/7.png)
 
 ---
 
@@ -218,7 +217,7 @@ Edit `config/config.yaml` to adjust:
 ```bash
 python scripts/download_dataset.py
 ```
-**[Add screenshot of: Roboflow dataset page, augmentation examples]**
+![After Data Collection](images/9.png)
 
 ---
 
@@ -253,7 +252,7 @@ Automated-Insect-Detection-Counting-System/
 ├── scripts/
 │   ├── realtime_detection.py    # Main detection system
 │   └── download_dataset.py       # Roboflow dataset download
-├── models/
+├── runs/
 │   └── best.pt                   # Trained YOLO model
 ├── config/
 │   └── config.yaml               # Configuration parameters
@@ -266,23 +265,6 @@ Automated-Insect-Detection-Counting-System/
 ├── requirements.txt               # Python dependencies
 └── .gitignore                     # Git ignore rules
 ```
-
-## 📸 Project Gallery
-
-### Data Collection Phase
-**[Add 3-4 pictures of dome setup, camera, raw images]**
-
-### Annotation & Training
-**[Add screenshots of Roboflow interface, training metrics]**
-
-### Deployment
-**[Add pictures of Pi setup, connected camera, running system]**
-
-### Results
-**[Add screenshots of live detection, CSV logs, statistics]**
-
-### Hardware Integration
-**[Add pictures of 3D model, printed enclosure, final assembly]**
 
 ---
 
