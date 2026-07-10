@@ -1,0 +1,18 @@
+# Configuration for Fruit Fly Detection System
+
+model:
+  path: "models/best.pt"
+  confidence_threshold: 0.5
+
+camera:
+  width: 640
+  height: 480
+  format: "RGB888"
+
+detection:
+  frame_delay: 1  # seconds between frames
+  capture_interval: 60  # auto-save snapshot interval
+
+output:
+  log_directory: "detection_logs"
+  snapshot_directory: "detection_logs/captured_detections"
